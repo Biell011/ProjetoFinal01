@@ -1,0 +1,417 @@
+* {
+    font-family: 'Alatsi', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+
+/*----------INICIO DO SITE E SEUS CSS----------*/
+body {
+    margin: 0px;
+    padding: 0px;
+    
+}
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    background-color:#FDCA40;
+    
+}
+.draco {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+.logo {
+    display:flex;
+    align-items:center;
+     
+}
+.menu {
+    display:flex;
+    align-items:center;
+}
+
+
+
+
+/*----------NAV NAVEGAÇÃO DE MENUS----------*/
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul {
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3772FF;
+    font-family: 'Alatsi', Arial, Helvetica, sans-serif;
+}
+nav .active a,
+nav a:hover {
+    background-color: #3772FF;
+    color: #ffffff;
+}
+
+
+
+
+/*----------BANNER DO SITE----------*/
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../img/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.coluna {
+    flex-direction: column;
+}
+.banner_cabe {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner_cabe h1 {
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 47px;
+    font-family: 'Courier New';
+    text-shadow: 1px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+.banner_cabe h2 {
+    color: #ffffff;
+    font-size: 22px;
+    font-family:'Gill Sans';
+    text-shadow: 1px 1px 0px #555555;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 20px;
+}
+.banner_opicao {
+    height: 210px;
+    display: flex;
+}
+.banner-1,
+.banner-2,
+.banner-3 {
+    flex: 1;
+    color: #FDCA40;
+    padding: 20px;
+    background-color: white;
+    text-shadow: black 0.1em 0.1em 0.1em; 
+}
+.banner-1 {
+    border-top-left-radius: 3pc; 
+}
+.banner-2 {
+    background-color: #FDCA40;
+    color:white; 
+}
+.banner-3 {
+    border-top-right-radius:3pc;
+}
+
+.banner_titulo {
+    font-size: 20px;
+}
+.banner_cont {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner_opicao a {
+    display: inline-block;
+    border: 1px solid #FDCA40;
+    border-radius:5px; 
+    padding: 5px;
+    color:#ffffff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.banner-1 a:hover, .banner-3 a:hover{
+    background-color:#FDCA40; 
+}
+.banner-2 a {
+    border:#FFF 1px solid; 
+}
+.banner-2 a:hover {
+    background-color:#FFF; 
+}
+
+
+
+
+
+/*----------IMAGENS DO SITE----------*/
+img {
+   width: auto;
+   height: 90px;
+}
+.plano-1 {
+    width: 40px;
+    height: auto;
+}
+.plano-2 {
+    width: 15px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+/*----------HORA EM TEMPO REAL DO SITE----------*/
+.draco_hora {
+        flex: auto;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        color: #ffffff;
+        background-color: #9a9a9a;
+        border-bottom: 1px solid #7a0404;
+        padding: 5px;
+}
+.draco_centra {
+        margin: 5px;
+        padding: 5px;
+}
+
+
+
+
+
+
+/*----------REDE SOCIAL----------*/
+.draco_redes {
+    flex-direction: row-reverse;
+    margin-left: 1200px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+
+
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+#geral section {
+    flex: 2;
+}
+#geral aside {
+    flex: 1;
+}
+
+
+
+
+
+.artigo-titu {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.artigo-titu-texto {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px;
+}
+.artigo-titu-barra {
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.artigo-corpo {
+    color: #ffffff;
+}
+.quadro {
+    width: 120px;
+    height: 120px;
+    background-color: #3772FF;
+    margin: 12px;
+    float: left;
+    padding-bottom: 15px;
+    display: flex;
+    border:#FDCA40 3px solid; 
+    border-radius:6px; 
+    
+}
+.predes {
+    width: 300px;
+    height: auto;
+    margin: 12px;
+    float: left;
+    padding-bottom: 15px;
+    display: flex;  
+}
+
+
+
+
+
+
+article a {
+    text-decoration: none;
+}
+article .data {
+    display: flex;
+}
+article .post {
+    display: flex;
+    background-color: #FDCA40;
+    color: #ffffff;
+    padding: 10px;
+    margin-right: 4px;
+}
+article .post-comentarios {
+    display: flex;
+    background-color:#000000;
+    color: #ffffff;
+    padding: 10px;
+}
+article .img-info {
+    margin-top: 30px;
+}
+article .img-info img {
+    width: 100%;
+    height: auto;
+}
+article .data-titulo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+article .data-resumo {
+    color: #000000;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.barra {
+    width: 300px;
+    height: 1px;
+    background-color: #FDCA40;
+    padding: 3px;
+    color:#000; 
+}
+
+
+
+
+
+footer {
+    background-color: #3772FF;
+    display: flex;
+    justify-content: center;
+}
+.footer-menu {
+    display: flex;
+    margin-top:10px; 
+}
+.fo-1, .fo-2, .fo-3 {
+    flex: 1;
+    color: #ffffff;
+    padding: 20px;
+}
+.fo-1 {
+    background-color: #fff;
+    color:#3772FF; 
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.fo-2 {
+     background-color: #fff;
+     color:#3772FF; 
+}
+.fo-3 {
+    background-color: #fff;
+    color:#3772FF; 
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.footer-area {
+    display: flex;
+}
+.area-item {
+    flex: 1;
+    color: #ffffff;
+}
+.flexcoluna {
+    flex-direction:column;
+}
+.coopy {
+    border-top: 1px solid #fefefe;
+    height: 40px;
+    line-height: 40px;
+    color: #f0f0f0;
+    font-size: 12px;
+    margin-top: 30px;
+}
+.artigo-titu-desc {
+    display:flex; 
+    flex-direction: column;
+}
+.artigo-titu-desc a {
+    margin: 5px 0px; 
+    color:#fff; 
+    text-decoration:none;
+}
+.artigo-titu-desc a:hover {
+    color:#C2D4FF; 
+}
+.artigo-titu-icons img {
+    height: 15px;
+    width:auto; 
+    margin-top:20px; 
+    margin: 10px; 
+    border: white 1px solid; 
+    border-radius:7.5px;
+    padding:3px; 
+    cursor: pointer;
+}
+
+
+
